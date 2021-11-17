@@ -1,0 +1,36 @@
+.cards__list {
+  display: flex;
+  z-index: 0;
+}
+
+.cards {
+  padding-top: 0;
+}
+
+.cards__item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.cards__title__block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 100%;
+  height: 70px;
+  background-color: rgba(47, 48, 58, 0.8);
+  bottom: 0;
+}
+
+.cards__title__text {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--white-text-color);
+}
+
+.cards__block {
+  position: relative;
+}
