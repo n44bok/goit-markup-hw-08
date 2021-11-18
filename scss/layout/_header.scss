@@ -11,6 +11,10 @@
   z-index: 1;
   background-color: var(--white-text-color);
   border-bottom: 1px solid #ececec;
+
+  @media screen and (max-width: 767px) {
+    justify-content: space-between;
+  }
 }
 
 .menu-button {
@@ -51,7 +55,6 @@
     top: 100%;
     left: 0;
     width: 100%;
-    height: 796px;
   }
 
   @media screen and (min-width: 768px) {
@@ -162,12 +165,6 @@
   }
 }
 
-.site-contacts__item {
-  @media screen and (max-width: 767px) {
-    margin-bottom: 32px;
-  }
-}
-
 .site-contacts__link {
   display: flex;
   align-items: center;
@@ -192,6 +189,8 @@
     font-size: 34px;
     line-height: 1.18;
     letter-spacing: 0.02em;
+    position: absolute;
+    top: 0;
   }
 }
 
@@ -219,6 +218,8 @@
     font-size: 24px;
     line-height: 1.17;
     letter-spacing: 0.02em;
+
+    padding-top: 64px;
   }
 }
 
