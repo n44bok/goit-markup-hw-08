@@ -4,8 +4,18 @@
 }
 
 .team__list {
-  display: flex;
+  display: block;
   text-align: center;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    text-align: center;
+  }
 }
 
 .team-block__title {
@@ -30,11 +40,31 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
   background-color: var(--white-text-color);
 
-  &:not(:last-child) {
-    margin-right: 30px;
+  &:nth-child(1n + 1) {
+    margin-bottom: 30px;
+  }
+
+  @media screen and (min-width: 768px) {
+    &:nth-child(odd) {
+      margin-right: 30px;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
   }
 }
 
 .team {
   background-color: #f5f4fa;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  min-width: 480px;
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }

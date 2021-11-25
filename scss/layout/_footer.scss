@@ -1,14 +1,49 @@
 footer {
   background-color: #2f303a;
-  margin-left: auto;
-  margin-right: auto;
+  min-width: 480px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .footer-block {
-  padding-top: 60px;
-  padding-bottom: 60px;
   display: flex;
-  align-items: baseline;
+
+  @media screen and (max-width: 1199px) {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  @media screen and (min-width: 1200px) {
+    align-items: baseline;
+    width: 1200px;
+  }
+}
+
+.footer-section {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: baseline;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-right: auto;
+  }
+}
+
+.footer-block__contacts {
+  text-align: center;
+  margin-bottom: 60px;
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-right: 165px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 70px;
+    text-align: left;
+    margin-bottom: 0;
+  }
 }
 
 .city {
@@ -49,14 +84,6 @@ footer {
   color: rgba(255, 255, 255, 0.6);
 }
 
-.footer-block__contacts {
-  margin-right: 70px;
-}
-
-.footer-join {
-  margin-right: 93px;
-}
-
 .footer-join__title {
   font-weight: 500;
   font-size: 14px;
@@ -67,12 +94,25 @@ footer {
   margin-bottom: 20px;
 }
 
+.footer-join__social {
+  @media screen and (max-width: 1199px) {
+    margin-bottom: 60px;
+  }
+}
+
 .form-footer {
-  display: flex;
+  display: block;
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    margin-left: auto;
+    align-items: flex-end;
+  }
 }
 
 .form-footer input {
-  display: flex;
+  width: 450px;
+  height: 50px;
 
   font-size: 16px;
   line-height: 1.25;
@@ -82,11 +122,19 @@ footer {
 
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
-  margin-right: 12px;
-  width: 358px;
+
   align-items: center;
   justify-content: center;
   padding: 15px 16px 15px 16px;
+
+  @media screen and (max-width: 1199px) {
+    margin-bottom: 20px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 12px;
+    width: 358px;
+  }
 }
 
 .form-footer input::placeholder {
