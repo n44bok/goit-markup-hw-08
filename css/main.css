@@ -544,6 +544,7 @@ section {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  border-bottom: 1px solid #ececec;
   padding-top: 10px;
   padding-bottom: 10px;
 }
@@ -552,7 +553,6 @@ section {
   .header-container {
     padding-top: 21px;
     padding-bottom: 20px;
-    border-bottom: 1px solid #ececec;
   }
 }
 
@@ -560,7 +560,6 @@ section {
   .header-container {
     padding-top: 24px;
     padding-bottom: 23px;
-    border-bottom: 1px solid #ececec;
   }
 }
 
@@ -1509,7 +1508,6 @@ footer {
   .works-list {
     display: flex;
     flex-wrap: wrap;
-    margin-right: -30px;
   }
 }
 
@@ -1556,6 +1554,10 @@ footer {
   .works-list__item:nth-child(3n) {
     margin-right: 0;
   }
+}
+
+.work-img {
+  height: 100%;
 }
 
 .works-list__overlay {
@@ -1616,6 +1618,7 @@ footer {
 
 .works-block {
   padding: 20px 24px 20px 24px;
+  flex-grow: 1;
   border-bottom: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;
