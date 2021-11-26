@@ -611,6 +611,10 @@ section {
   transition: opacity 250ms linear, visibility 250ms linear;
 }
 
+.mobile-menu__link.current {
+  color: var(--accent-color);
+}
+
 .mobile-menu.is-open {
   opacity: 1;
   visibility: visible;
