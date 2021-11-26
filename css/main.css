@@ -1568,6 +1568,7 @@ footer {
 .works-list__link {
   display: flex;
   flex-direction: column;
+  height: 100%;
 }
 
 .works-list__overlay::before {

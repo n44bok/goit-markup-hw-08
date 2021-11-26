@@ -47,10 +47,12 @@
 .works-list__link {
   display: flex;
   flex-direction: column;
+  height: 100%;
 }
 
 .works-list__overlay::before {
   display: inline-block;
+
   position: absolute;
   content: "";
   width: 100%;
