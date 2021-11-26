@@ -22,6 +22,19 @@
 
 body {
   font-family: Roboto, sans-serif;
+  padding-top: 80px;
+}
+
+@media screen and (min-width: 480px) {
+  body {
+    padding-top: 60px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    padding-top: 100px;
+  }
 }
 
 .list {
@@ -1516,26 +1529,27 @@ footer {
 }
 
 .portfolio {
-  padding-top: 120px;
+  min-width: 480px;
+  padding-top: 60px;
   padding-bottom: 60px;
 }
 
 @media screen and (min-width: 768px) {
   .portfolio {
-    padding-top: 140px;
+    padding-top: 60px;
     padding-bottom: 60px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .portfolio {
-    padding-top: 174px;
+    padding-top: 94px;
     padding-bottom: 94px;
   }
 }
 
 .works-list {
-  min-width: 480px;
+  width: 100%;
   display: block;
 }
 
