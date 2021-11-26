@@ -616,6 +616,8 @@ section {
   visibility: visible;
   pointer-events: all;
   background-color: var(--white-text-color);
+  width: 100vw;
+  height: 100vh;
 }
 
 .close-button {
