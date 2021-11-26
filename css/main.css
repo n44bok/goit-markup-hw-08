@@ -1565,6 +1565,11 @@ footer {
   overflow: hidden;
 }
 
+.works-list__link {
+  display: flex;
+  flex-direction: column;
+}
+
 .works-list__overlay::before {
   display: inline-block;
   position: absolute;
