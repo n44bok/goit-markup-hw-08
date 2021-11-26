@@ -1143,24 +1143,27 @@ section {
 .team-block {
   padding-bottom: 30px;
   padding-top: 30px;
-}
-
-.team__list {
-  display: block;
   text-align: center;
 }
 
-@media screen and (min-width: 768px) {
+.team__list {
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
   .team__list {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .team__list {
-    display: flex;
-    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
   }
 }
 
@@ -1186,19 +1189,9 @@ section {
   background-color: var(--white-text-color);
 }
 
-.team__item:nth-child(1n + 1) {
-  margin-bottom: 30px;
-}
-
-@media screen and (min-width: 768px) {
-  .team__item:nth-child(odd) {
-    margin-right: 30px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
+@media screen and (max-width: 768px) {
   .team__item:not(:last-child) {
-    margin-right: 30px;
+    margin-bottom: 30px;
   }
 }
 
