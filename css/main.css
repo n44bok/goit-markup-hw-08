@@ -1004,7 +1004,6 @@ section {
 }
 
 .features {
-  min-width: 480px;
   padding-top: 60px;
   padding-bottom: 60px;
 }
@@ -1296,7 +1295,6 @@ section {
 }
 
 .clients {
-  min-width: 480px;
   padding-top: 60px;
   padding-bottom: 60px;
 }
@@ -1470,7 +1468,6 @@ footer {
 }
 
 .portfolio__filter {
-  min-width: 480px;
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 40px;
@@ -1522,7 +1519,6 @@ footer {
 }
 
 .portfolio {
-  min-width: 480px;
   padding-top: 60px;
   padding-bottom: 60px;
 }
