@@ -481,7 +481,7 @@ section {
   color: #757575;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 768px) {
   .policy {
     font-size: 12px;
   }
@@ -496,7 +496,7 @@ section {
   text-decoration: underline;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 768px) {
   .policy-terms {
     font-size: 12px;
   }

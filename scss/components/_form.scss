@@ -144,7 +144,7 @@
   letter-spacing: 0.03em;
   color: #757575;
 
-  @media screen and (min-width: 480px) {
+  @media screen and (max-width: 768px) {
     font-size: 12px;
   }
 }
@@ -157,7 +157,7 @@
   color: var(--accent-color);
   text-decoration: underline;
 
-  @media screen and (min-width: 480px) {
+  @media screen and (max-width: 768px) {
     font-size: 12px;
   }
 }
