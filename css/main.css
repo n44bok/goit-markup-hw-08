@@ -1008,6 +1008,7 @@ section {
 }
 
 .features {
+  width: 480px;
   justify-content: center;
   padding-top: 60px;
   padding-bottom: 60px;
@@ -1231,7 +1232,7 @@ section {
   background-color: #f5f4fa;
   padding-top: 60px;
   padding-bottom: 60px;
-  min-width: 480px;
+  width: 480px;
 }
 
 @media screen and (min-width: 1200px) {
@@ -1308,6 +1309,7 @@ section {
 }
 
 .clients {
+  width: 480px;
   justify-content: center;
   padding-top: 60px;
   padding-bottom: 60px;
@@ -1322,6 +1324,7 @@ section {
 
 footer {
   background-color: #2f303a;
+  width: 480px;
   padding-top: 60px;
   padding-bottom: 60px;
 }
@@ -1533,6 +1536,7 @@ footer {
 }
 
 .portfolio {
+  width: 480px;
   padding-top: 60px;
   padding-bottom: 60px;
 }
