@@ -11,14 +11,14 @@
   align-items: center;
 
   background-color: var(--white-text-color);
+
+  border-bottom: 1px solid #ececec;
 }
 
 .header-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
-
-  border-bottom: 1px solid #ececec;
 
   padding-top: 10px;
   padding-bottom: 10px;
